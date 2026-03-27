@@ -1,7 +1,7 @@
 #define BLYNK_PRINT Serial
-#define BLYNK_TEMPLATE_ID "TMPL2knfn3jQK" 
+#define BLYNK_TEMPLATE_ID "TMPL2knfn3jQK" // colocar el ID del blynk generado, en esta linea
 #define BLYNK_TEMPLATE_NAME "Control de motores"
-#define BLYNK_AUTH_TOKEN "jmd3LltfJRCb2isspmTS1XoJVaZE_15K"
+#define BLYNK_AUTH_TOKEN "jmd3LltfJRCb2isspmTS1XoJVaZE_15K" // token generado por la pagina web del blynk colocar en esta linea
 // INSTALAR TODAS ESTAS LIBRERIRAS
 #include <WiFi.h>
 #include <BlynkSimpleEsp32.h>
@@ -100,7 +100,7 @@ void modoAutomatico() {
   ejecutarAutomatico = false;
 
   mostrarTextoCentrado("RUN", 3);
-
+//calibrar angulos para movimiento del brazo robotico
   motor1.write(45);
   motor2.write(180);
   motor3.write(0);
